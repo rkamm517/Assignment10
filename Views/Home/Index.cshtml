@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IndexViewModel 
+
+@foreach (var x in Model.Teams)
+{
+    <p>@x.TeamName</p>
+}
+
+<div page-info=@Model.PageNumberingInfo page-url-teamname="@Model.TeamName">
+
+</div>
